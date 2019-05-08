@@ -5,16 +5,16 @@
 
 # UPDATE SISTEMA
 sudo apt-get update -y
-sudo apt-get upgrade
-sudo rpi-update
+sudo apt-get upgrade -y
+sudo rpi-update -y
 
 # Install dependencies
-sudo apt-get install build-essential cmake pkg-config
-sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
-sudo apt-get install libxvidcore-dev libx264-dev
-sudo apt-get install libgtk2.0-dev libgtk-3-dev
-sudo apt-get install libatlas-base-dev gfortran
+sudo apt-get install build-essential cmake pkg-config -y
+sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev -y
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev -y
+sudo apt-get install libxvidcore-dev libx264-dev -y
+sudo apt-get install libgtk2.0-dev libgtk-3-dev -y
+sudo apt-get install libatlas-base-dev gfortran -y
 
 # Setup Python 3 development tools
 sudo apt-get install python3 python3-setuptools python3-dev
@@ -31,7 +31,7 @@ unzip opencv.zip
 unzip opencv_contrib.zip
 
 # Install Numpy
-sudo pip3 install numpy
+sudo pip3 install numpy -y
 
 # Increase swap space
   ## We are going to increase swap size from 100MB to 1024MB, to facilitate compilation of OpenCV on all four cores of Pi.
